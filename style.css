@@ -1,0 +1,52 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body { margin: 0; background: white; color: #1a1a1a; }
+
+.header {
+  display: flex; justify-content: space-between;
+  padding: 20px 40px; border-bottom: 1px solid #eee;
+}
+
+.logo { font-size: 24px; font-weight: bold; color: #007bff; }
+
+nav a {
+  margin-left: 20px; text-decoration: none;
+  color: #333; font-weight: 500;
+}
+
+.hero { padding: 80px 20px; text-align: center; }
+
+.hero h1 { font-size: 36px; }
+
+.hero p { font-size: 18px; max-width: 700px; margin: auto; }
+
+.hero-buttons { margin-top: 40px; }
+
+.btn-primary {
+  background: #007bff; color: white;
+  padding: 15px 30px; border-radius: 6px;
+  text-decoration: none; display: inline-block;
+}
+
+.btn-secondary {
+  border: 2px solid #007bff; color: #007bff;
+  padding: 15px 30px; border-radius: 6px;
+  text-decoration: none; margin-left: 10px;
+}
+
+.section { padding: 60px 20px; text-align: center; }
+
+.cards {
+  display: flex; justify-content: center;
+  gap: 30px; flex-wrap: wrap;
+}
+
+.card {
+  background: white; padding: 30px; width: 260px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h3 { color: #007bff; }
+
+.footer { text-align: center; padding: 20px; color: #666; }
