@@ -46,7 +46,22 @@
 </footer>
 
 <script src="script.js"></script>
-</body><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</body<button onclick="signup()">Créer un compte</button>
+
+<script>
+async function signup() {
+  const email = "test@boostia.com"
+  const password = "123456"
+
+  const { error } = await supabase.auth.signUp({
+    email,
+    password
+  })
+
+  if (error) alert(error.message)
+  else alert("Compte créé avec succès")
+}
+</script>><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 <script>
   const supabaseUrl = "TON_URL_SUPABASE"
   const supabaseKey = "TA_CLÉ_ANON"
